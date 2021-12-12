@@ -1,2 +1,6 @@
-# study_frontend
-frontend
+프로젝트 이름
+스택(기술)
+주요 기능
+아키텍쳐
+
+변수 선언
