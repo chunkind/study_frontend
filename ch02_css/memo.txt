@@ -1,0 +1,27 @@
+CSS
+cascading style sheet
+
+1.의미, 정의
+Author style
+-css파일
+User style
+-브라우저상에서 사용자의 취향에 맞게 지정한 것
+Browser
+-브라우저에서 기본적으로 적용된 스타일
+
+cascading의 연결고리를 끊어내는 딱하나의 명령어
+!important
+
+2.선택자(selectors)
+Universal *
+type Tag
+ID #id
+Class .class
+state :
+Attribute []
+
+3.스타일링
+
+4.헷갈리는 컨셉
+
+5.CSS꽃: flex box
