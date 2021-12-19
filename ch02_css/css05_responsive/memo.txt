@@ -1,0 +1,38 @@
+Media Queries
+
+1.mobile
+320px ~ 480px
+
+2.tablet
+768px ~ 1024px
+
+3.desktop
+1024px ~
+
+@media screen and (min-width: 800px){
+
+}
+
+params
+
+1번 영역
+screen
+all
+print
+speech
+
+2번 영역
+and
+not
+only
+,(comma)
+
+3번 영역
+min-width
+max-width
+
+
+참고 싸이트 -
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+https://www.interaction-design.org/literature/article/adaptive-vs-responsive-design
+https://www.internetingishard.com/

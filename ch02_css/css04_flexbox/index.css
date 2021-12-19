@@ -18,14 +18,20 @@
 .item1{
     background: #ef9a9a;
     order: 1;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 
 .item2{
     background: #f48fb1;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .item3{
     background: #ce93d8;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .item4{
