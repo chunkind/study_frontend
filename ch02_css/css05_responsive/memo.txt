@@ -36,3 +36,15 @@ max-width
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
 https://www.interaction-design.org/literature/article/adaptive-vs-responsive-design
 https://www.internetingishard.com/
+
+
+responsive unit
+css -> selector, property, values 로 이루어짐.
+
+size를 결정하는 유닛
+절대적인값(Absolute)
+
+
+상대적인값(Relative)
+
+
