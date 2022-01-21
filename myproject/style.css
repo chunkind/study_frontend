@@ -1,0 +1,42 @@
+/* 공통 변수 */
+:root {
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  cursor: default;
+}
+
+ul{
+  list-style: none;
+}
+
+.header{
+  padding: 14px;
+}
+
+.header .navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .navbar .menu{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.header .navbar .menu li{
+  padding: 5px;
+}
+
+.header .navbar .navbar_toogleBtn{
+  display: none;
+}
