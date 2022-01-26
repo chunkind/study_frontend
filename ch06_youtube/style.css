@@ -63,6 +63,7 @@ header .logo i {
   top: 0;
   text-align: center;
   background-color: var(--black-color);
+  height: 350px;
 }
 
 .player video {
