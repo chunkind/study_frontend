@@ -40,6 +40,7 @@ body {
   align-items: center;
   margin: 0;
   background-color: var(--white-light-color);
+  overflow-y: hidden;
 }
 
 a {
@@ -78,6 +79,7 @@ button {
 
 .main {
   width: 100%;
+  /* height: 100%; */
   height: calc(100vh - var(--header-size));
   display: flex;
   justify-content: center;
@@ -217,7 +219,7 @@ button {
   margin: 5px;
 }
 
-/* home */
+/* header */
 .header {
   width: 100%;
   display: flex;
@@ -230,7 +232,7 @@ button {
   height: var(--header-size);
 }
 
-header div {
+.header div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,6 +240,28 @@ header div {
   max-width: 200px;
 }
 
+.header .search input{
+  background-color: var(--grey-light-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  font-size: var(--font-micro);
+}
+
+.header .icons{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header .icons i{
+  margin-right: 10px;
+}
+
+/* home */
 .main .main_left {
   height: 100%;
   overflow-y: scroll;
@@ -253,13 +277,16 @@ header div {
 }
 
 .main .main_right {
+  font-size: var(--font-micro);
   position: sticky;
   top: var(--header-size);
   height: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
   text-align: left;
   margin-left: 10px;
   width: 25%;
+  margin-top: 20px;
+  max-width: 180px;
 }
 
 .article_list .article {
@@ -299,4 +326,167 @@ header div {
   width: 100%;
   height: 100%;
   padding: 10px;
+}
+
+.article_icons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.article_like{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.article_like .imgs{
+  display: flex;
+}
+
+.article_like .links{
+  font-size: var(--font-micro);
+  margin-left: 15px;
+}
+
+.article_like .imgs a{
+  width: 13px;
+}
+
+.article_like .imgs img{
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /* padding: 5px; */
+}
+
+.article_comment{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  font-size: var(--font-micro);
+}
+
+.article_comment .comment{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.comment_write{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.comment_write input{
+  width: 80%;
+  font-size: var(--font-micro);
+}
+
+.comment_write button{
+  color: var(--blue-light-color);
+  font-size: var(--font-micro);
+}
+
+
+/* main_right */
+.main_right .user_change{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.main_right .user_change .name{
+  display: flex;
+  flex-direction: column;
+}
+
+.main_right .user_change img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.main_right .user_change button{
+  font-size: var(--font-micro);
+}
+
+.main_right .commend{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main_right .follower_list{
+  margin-top: 15px;
+}
+
+.main_right .follower_list .follower{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.main_right .follower_list .follower img{
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.main_right .follower_list .follower .name{
+  display: flex;
+  flex-direction: column;
+}
+
+.main_right .auth_right{
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+  margin-top: 10px;
+}
+
+.name span{
+  color: var(--grey-dark-color);
+}
+
+
+@media screen and (max-width: 700px){
+  .header .logo{
+    width: 20%;
+  }
+  .header .search{
+    width: 70%;
+  }
+  .header .icons{
+    display: none;
+  }
+  .main .main_left{
+    width: 80%;
+    /* overflow-y: visible; */
+  }
+  .main .main_right{
+    display: none;
+  }
 }
