@@ -15,10 +15,10 @@
   --avatar-size: 36px;
 
   /* font size */
-  --font-large: 18px;
-  --font-medium: 14px;
-  --font-small: 12px;
-  --font-micro: 10px;
+  --font-large: 20px;
+  --font-medium: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
 
   /* border size */
   --radius-size: 5px;
@@ -84,7 +84,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 935px;
+  /* max-width: 935px; */
 }
 
 /* login */
