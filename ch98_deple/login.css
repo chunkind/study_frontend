@@ -51,8 +51,11 @@
   height: 30px;
   font-size: var(--font-small);
   background-color: var(--blue-light-color);
-  color: var(--grey-light-color);
   border-radius: var(--radius-size);
+}
+
+.main .login .border_box .form_box .input_box .btn a{
+  color: var(--grey-light-color);
 }
 
 .input_box {
@@ -88,4 +91,21 @@
 
 .line_box div {
   margin: 5px;
+}
+
+.main .login .border_box .frm .sns_login{
+  font-size: var(--font-micro);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .login .border_box .frm .sns_login a{
+  padding: 2px;
+  color: black;
+}
+
+.main .login .border_box .account_info{
+  max-width: 300px;
 }
