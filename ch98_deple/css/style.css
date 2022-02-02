@@ -206,6 +206,7 @@ p {
   display: inline-block;
   position: relative;
   padding: 5px;
+  cursor: pointer;
 }
 
 .popup_black .popup_page .popup_body .content img{
@@ -233,4 +234,5 @@ p {
   width: 80%;
   padding: 10px;
   border-radius: 5px;
+  color: var(--white-color);
 }
