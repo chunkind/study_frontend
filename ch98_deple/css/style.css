@@ -179,6 +179,17 @@ p {
   padding:50px;
 }
 
+.popup_black .popup_close{
+  width: 100%;
+  color: var(--grey-light-color);
+  text-align: right;
+  padding: 10px;
+}
+
+.popup_black .popup_close i{
+  cursor: pointer;
+}
+
 .popup_black .popup_page{
   height: 100%;
   background-color: var(--white-color);
