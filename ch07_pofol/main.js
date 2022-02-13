@@ -20,8 +20,15 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null){
     return;
   }
+  navbarMenu.classList.remove('open');
   // console.log(event.target.dataset.link);
   scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', ()=>{
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on "contact me" button on home
@@ -30,7 +37,7 @@ homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
-//Make home slawly fade to transparent as the window scrolls down
+// Make home slawly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -47,7 +54,7 @@ document.addEventListener('scroll', ()=>{
   }
 });
 
-//Handle click on the "arrow up" button
+// Handle click on the "arrow up" button
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });
