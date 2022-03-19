@@ -1,0 +1,37 @@
+body {
+  background-color: aquamarine;
+}
+
+.gener {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gener .group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px dashed #ffab8a;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.gener .group .char_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.gener .group .char_area .img_area {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.gener .group .char_area .img_area img {
+  width: 100px;
+}
